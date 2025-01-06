@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4cb9e0"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:id="@+id/txtMMTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#4cb9e0"
+        android:fontFamily="@font/munrosmall"
+        android:text="SERPENT"
+        android:textColor="#5e63a6"
+        android:textSize="100dp"
+        />
+    <TextView
+        android:id="@+id/HighScoreTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/munrosmall"
+        android:text = "High Scores"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:textColor="#5e63a6"
+        />
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="#5e63a6"
+        android:textSize="30dp"
+        android:fontFamily="@font/munrosmall"
+        android:text="     Start     " />
+
+    <Button
+        android:id="@+id/btnSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#5e63a6"
+        android:textSize="30dp"
+        android:fontFamily="@font/munrosmall"
+        android:text="   Settings   " />
+
+
+</RelativeLayout>

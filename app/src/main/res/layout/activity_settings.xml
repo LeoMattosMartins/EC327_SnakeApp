@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4cb9e0"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/txtSTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#4cb9e0"
+        android:text="Settings"
+        android:fontFamily="@font/munrosmall"
+        android:textColor="#5e63a6"
+        android:textStyle="bold"
+        android:textSize="40dp"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Choose Snake Color"
+        android:fontFamily="@font/munrosmall"
+        android:textColor="#5e63a6"
+        android:textStyle="bold"
+        />
+    <RadioGroup
+        android:id="@+id/gameFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purple"
+            android:fontFamily="@font/munrosmall"
+            android:textColor="#5e63a6"
+            android:textStyle="bold"
+            android:id="@+id/rbPurple" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:textColor="#FFEB3B"
+            android:fontFamily="@font/munrosmall"
+            android:textStyle="bold"
+            android:id="@+id/rbYellow"
+            android:layout_marginLeft="20dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textColor="#E81606"
+            android:fontFamily="@font/munrosmall"
+            android:textStyle="bold"
+            android:id="@+id/rbRed"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:orientation="horizontal">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrows"
+        android:fontFamily="@font/munrosmall"
+        android:textColor="#5e63a6"
+        android:textStyle="bold"
+        android:id="@+id/ArrowsBT" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touch Screen"
+        android:fontFamily="@font/munrosmall"
+        android:textColor="#5e63a6"
+        android:textStyle="bold"
+        android:id="@+id/FullScreenBT"
+        android:layout_marginLeft="20dp"
+        />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="#5e63a6"
+        android:text="Return to Main Menu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:text="Choose Control Setup"
+        android:fontFamily="@font/munrosmall"
+        android:textColor="#5e63a6"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:text="Game Speed"
+        android:fontFamily="@font/munrosmall"
+        android:textColor="#5e63a6"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+
+    <RadioGroup
+        android:id="@+id/gameSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slow"
+            android:fontFamily="@font/munrosmall"
+            android:textColor="#5e63a6"
+            android:textStyle="bold"
+            android:id="@+id/rbSlow" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textColor="#5e63a6"
+            android:fontFamily="@font/munrosmall"
+            android:textStyle="bold"
+            android:id="@+id/rbMedium"
+            android:layout_marginLeft="20dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fast"
+            android:textColor="#5e63a6"
+            android:fontFamily="@font/munrosmall"
+            android:textStyle="bold"
+            android:id="@+id/rbFast"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RadioGroup>
+
+</RelativeLayout>
